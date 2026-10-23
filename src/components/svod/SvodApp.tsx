@@ -444,7 +444,7 @@ function EditScreen({ page, done }: { page: Page; done: () => void }) {
   let idx = -1;
   return (
     <div className="mx-auto max-w-[1160px] px-10 py-10">
-      <div className="rounded-[2px] bg-sheet px-16 pb-24 pt-10">
+      <div className="min-h-[760px] rounded-[2px] bg-sheet px-16 pb-24 pt-10">
         <div className="flex items-center justify-between text-[13px] text-muted-foreground">
           <span>Редактирование · <span className="text-foreground">сохранено</span></span>
           <div className="flex items-center gap-2">
@@ -464,7 +464,7 @@ function EditScreen({ page, done }: { page: Page; done: () => void }) {
             <span className="text-muted-foreground">/таб</span><span className="ml-px inline-block h-5 w-px translate-y-1 animate-pulse bg-foreground" />
           </p>
           {slash && (
-            <div className="animate-pop absolute left-0 top-[180px] z-10 w-[340px] rounded-xl border border-border bg-sheet p-1.5 shadow-[0_6px_20px_-8px_oklch(0.2_0.01_70/0.22)]">
+            <div className="animate-pop absolute left-0 top-[150px] z-10 w-[340px] max-h-[460px] overflow-y-auto rounded-xl border border-border bg-sheet p-1.5 shadow-[0_6px_20px_-8px_oklch(0.2_0.01_70/0.22)]">
               {SLASH.map((g) => (
                 <div key={g.group} className="py-1">
                   <div className="px-2.5 py-1 text-[11px] uppercase tracking-[0.08em] text-muted-foreground">{g.group}</div>
